@@ -1,0 +1,30 @@
+# === Dependencies ===
+node_modules/
+
+# === Test reports (generated) ===
+allure-results/
+allure-report/
+reports/
+
+# === Virtual environments ===
+.venv/
+
+# === Logs and artifacts ===
+logs/
+test-results/
+dist/
+*.log
+*.tmp
+
+# === Environment variables ===
+.env
+
+# === Coverage reports ===
+coverage/
+
+# === IDE/editor settings ===
+.vscode/
+.idea/
+
+# === macOS system files ===
+.DS_Store
