@@ -22,3 +22,4 @@ jobs:
 
       - name: Run HomePage test
         run: npx playwright test src/steps/HomePage.ts --project=chromium
+        #run: npm run test:cucumber
