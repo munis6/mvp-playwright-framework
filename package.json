@@ -1,0 +1,27 @@
+{
+  "name": "qa-playwright-clean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test:cucumber": "rm -rf allure-results && cucumber-js --config cucumber.cjs",
+  "report:allure": "npx allure open allure-report"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.9.0",
+    "@playwright/test": "^1.60.0",  
+    "allure-commandline": "^2.42.0",
+    "allure-cucumberjs": "^3.9.0",
+    "allure-js-commons": "^3.9.0",
+    "allure-playwright": "^3.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },  
+  "dependencies": {
+    "pino": "^10.3.1",
+    "pino-pretty": "^13.1.3"
+  }
+}
