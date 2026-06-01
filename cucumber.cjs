@@ -14,9 +14,9 @@ module.exports = {
 
     // Where to find step definitions and support files
     require: [
-      './src/support/world.ts',       // world.ts loaded
+      './src/support/world.ts',   // world.ts loaded
       './src/support/hooks.ts',   // hooks.ts loaded
-      './src/steps/ui/LoginPage.ts'       // loads your step definitions
+      './src/steps/**/*.ts'       // glob: loads all step definitions
     ],
 
     // Reporters: console logs, JSON report, Allure reporter
@@ -27,7 +27,7 @@ module.exports = {
     ],
 
     // Where to find feature files
-    paths: ['src/features/ui/loginpage.feature'],
+    paths: ['src/features/**/*.feature'],
 
     // Suppress publishing results to Cucumber Reports service
     publishQuiet: true
