@@ -22,3 +22,4 @@ jobs:
 
       - name: Run LoginPage test
         run: npx playwright test src/steps/ui/LoginPage.ts --project=chromium
+
