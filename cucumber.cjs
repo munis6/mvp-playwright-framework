@@ -14,9 +14,9 @@ module.exports = {
 
     // Where to find step definitions and support files
     require: [
-      './src/support/*.ts',       // world.ts loaded
+      './src/support/world.ts',       // world.ts loaded
       './src/support/hooks.ts',   // hooks.ts loaded
-      './src/steps/**/*.ts'       // loads your step definitions
+      './src/steps/ui/LoginPage.ts'       // loads your step definitions
     ],
 
     // Reporters: console logs, JSON report, Allure reporter

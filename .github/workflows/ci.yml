@@ -4,9 +4,9 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # future-proof against Node.js 20 deprecation
 
 on:
-  push:
-    branches: [ "main" ]   # triggers only when code is merged/pushed to main
-
+  #push:
+   # branches: [ "main" ]   # triggers only when code is merged/pushed to main
+  workflow_dispatch:   # allows manual triggering of the workflow from GitHub UI
 jobs:
   run-homepage-test:
     runs-on: ubuntu-latest
@@ -20,6 +20,6 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run HomePage test
-        run: npx playwright test src/steps/HomePage.ts --project=chromium
+      - name: Run LoginPage test
+        run: npx playwright test src/steps/ui/LoginPage.ts --project=chromium
         #run: npm run test:cucumber
