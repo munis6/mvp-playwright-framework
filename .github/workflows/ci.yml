@@ -8,7 +8,7 @@ on:
    # branches: [ "main" ]   # triggers only when code is merged/pushed to main
   workflow_dispatch:   # allows manual triggering of the workflow from GitHub UI
 jobs:
-  run-homepage-test:
+  run-loginpage-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,6 +20,6 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run LoginPage test
+      - name: Run Page test
         run: npx playwright test src/steps/ui/LoginPage.ts --project=chromium
         #run: npm run test:cucumber
